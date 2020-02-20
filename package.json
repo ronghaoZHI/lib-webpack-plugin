@@ -1,0 +1,38 @@
+{
+  "name": "lib-webpack-plugin",
+  "version": "1.0.0",
+  "description": "打包外部 js链接资源到 html",
+  "bugs": {
+    "url": "https://github.com/ronghaoZHI/lib-webpack-plugin/issues"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^3.2.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build-examples": "node examples/build-examples.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=6.9"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "js",
+    "html-webpack-plugin",
+    "lib-webpack-plugin"
+  ],
+  "author": "ronghaoZHI",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronghaoZHI/lib-webpack-plugin.git"
+  },
+  "license": "MIT"
+}
