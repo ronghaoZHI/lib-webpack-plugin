@@ -16,6 +16,8 @@
 **webpack.config.js**
 ```js
 const LibWebpackPlugin = require('lib-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 const libs = [{
 	name: "lib.js",
 	version: "1.0.1",
@@ -29,10 +31,12 @@ module.exports = {
     filename: 'index_bundle.js'
   },
   plugins: [
+    new HtmlWebpackPlugin(), 
     new LibWebpackPlugin(libs)
   ]
 }
 ```
+tips: you can use ```LibWebpackPlugin```  in ``` vue/cli``` or ```react/cli```  directly,  because the cli has include ``` html-webpack-plugin ```
 
 This will generate a file `dist/index.html` containing the following
 
