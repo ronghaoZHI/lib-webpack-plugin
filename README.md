@@ -36,7 +36,7 @@ module.exports = {
   ]
 }
 ```
-tips: you can use ```LibWebpackPlugin```  in ``` vue/cli``` or ```react/cli```  directly,  because the cli has include ``` html-webpack-plugin ```
+tips: you can use ```LibWebpackPlugin```  in ``` vue/cli``` or ```react/cli```  directly,  because the cli has include ``` html-webpack-plugin ``` .
 
 This will generate a file `dist/index.html` containing the following
 
