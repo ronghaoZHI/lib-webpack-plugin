@@ -21,7 +21,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const libs = [{
 	name: "lib.js",
 	version: "1.0.1",
-	publicPath: "http://xxx.com"
+  publicPath: "http://xxx.com",
+  inject: "head"  // <option>  default value is "body"
 }]
 
 module.exports = {
