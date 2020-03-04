@@ -12,14 +12,14 @@ class LibWebpackPlugin {
 	apply(compiler) {
 		compiler.hooks.compilation.tap(pluginName, (compilation) => {
 			compilation.hooks.htmlWebpackPluginAlterAssetTags.tapAsync(pluginName, (data, cb) => {
-				const libBodies = this.options.map((item) => {
-					return {
+				this.options.forEach((item) => {
+					const inject = (item.inject && item.inject === 'head') ? 'head' : 'body'
+					data[inject].push({
 						tagName: 'script',
 						closeTag: true,
 						attributes: { type: 'text/javascript', src: (item.publicPath + '/' +  item.version + '/' + item.name) }
-					}
+					})
 				})
-				data.body.push(...libBodies)
 				cb(null, data)
 			})
 		})
