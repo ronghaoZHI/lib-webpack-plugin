@@ -20,8 +20,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const libs = [{
 	name: "lib.js",
-	version: "1.0.1",
   publicPath: "http://xxx.com",
+  version: "1.0.1", // <option> "" or "x.x.x" , default value is "" 
   inject: "body"  // <option> "head" or "body" , default value is "body" 
 }]
 

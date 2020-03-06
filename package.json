@@ -1,6 +1,6 @@
 {
   "name": "lib-webpack-plugin",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "打包外部 js链接资源到 html",
   "bugs": {
     "url": "https://github.com/ronghaoZHI/lib-webpack-plugin/issues"

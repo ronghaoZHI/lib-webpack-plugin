@@ -17,7 +17,10 @@ class LibWebpackPlugin {
 					data[inject].push({
 						tagName: 'script',
 						closeTag: true,
-						attributes: { type: 'text/javascript', src: (item.publicPath + '/' +  item.version + '/' + item.name) }
+						attributes: {
+							type: 'text/javascript', 
+							src: item.publicPath + '/' + (!!item.version ? item.version + '/' : '') + item.name
+						}
 					})
 				})
 				cb(null, data)
